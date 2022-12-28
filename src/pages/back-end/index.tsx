@@ -8,6 +8,7 @@ import home from "../../../public/home.svg"
 
 export default function BackEnd() {
 
+    
     return (
         <>
             <head>
@@ -129,6 +130,7 @@ export default function BackEnd() {
                     </div>
 
                 </div>
-            </div></>
+            </div>
+        </>
     )
 }

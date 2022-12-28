@@ -5,20 +5,20 @@ import { useEffect, useState } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
 
-	const [render, setRender] = useState(false)
+  const [render, setRender] = useState(false)
 
-	useEffect(() => {
-		setRender(true)
-	}, [])
+  useEffect(() => {
+    setRender(true)
+  }, [])
 
-	if (!render) {
-		return null
-	} else {
-		return (
-			<>
-				<Header />
-				<Component {...pageProps} />
-			</>
-		)
-	}
+  if (!render) {
+    return null
+  } else {
+    return (
+      <>
+        <Header />
+        <Component {...pageProps} />
+      </>
+    )
+  }
 }
