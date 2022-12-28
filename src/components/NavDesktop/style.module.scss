@@ -1,0 +1,27 @@
+.navBarDesktop{
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+
+    div{
+        margin: 1rem;
+    }
+    
+    .link{
+        margin: 0 2rem;
+        color: var(--textNotselected);
+        
+    }
+    
+    .selected{
+        font-weight: 700;
+        margin: 0 2rem;
+    }
+
+}
+
+@media (max-width: 900px){
+    .navBarDesktop{
+        display: none;
+    }
+}

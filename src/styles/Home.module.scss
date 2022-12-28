@@ -1,0 +1,173 @@
+.HomeContainer {
+    margin: 0 auto;
+    display: flex;
+    height: calc(100vh - 8rem);
+    padding-top: 8rem;
+    justify-content: center;
+}
+
+.HomeContent {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    width: 100%;
+    justify-content: space-around;
+
+    div.Avatar {
+        width: 22rem;
+        height: 22rem;
+        border-radius: 22rem;
+        background-color: var(--borderaAvatar);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+            width: 20rem;
+            height: 20rem;
+            border-radius: 20rem;
+        }
+    }
+
+
+}
+
+.UserContent {
+    max-width: 900px;
+    text-align: left;
+
+    .Title span {
+        font-size: 1.2rem;
+        color: var(--textNotselected);
+        font-style: italic;
+    }
+
+    .Title h2 {
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .Description {
+        max-width: 450px;
+        font-size: 14.5px;
+        color: var(#D5D5D5);
+
+        @media screen and (max-width: 1080) {}
+    }
+}
+
+.Buttons {
+    margin-top: 1rem;
+    display: flex;
+    max-width: 235px;
+    width: 100%;
+    justify-content: space-between;
+
+    .BorderButton {
+        border: 2px solid var(--borderButton);
+        background-color: var(--buttonColorGray);
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border-radius: 100px;
+        transition: border 0.3s;
+
+        .Button {
+            background-color: inherit;
+        }
+
+        &+.BorderButton {
+            margin-left: 0.5rem;
+        }
+
+        &:hover {
+            border-color: var(--borderSelected);
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .HomeContainer {
+        padding-top: 0;
+    }
+
+    .HomeContent {
+        display: flex;
+        flex-direction: column;
+        max-width: 1280px;
+        width: 100%;
+        align-items: center;
+
+        div.Avatar {
+            width: 18rem;
+            height: 18rem;
+            border-radius: 22rem;
+            background-color: var(--borderaAvatar);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .image {
+                width: 16rem;
+                height: 16rem;
+                border-radius: 20rem;
+            }
+        }
+    }
+
+    .UserContent {
+        max-width: 900px;
+        text-align: center;
+        margin-bottom: 100px;
+        .Title span {
+            font-size: 1.2rem;
+            color: var(--textNotselected);
+            font-style: italic;
+        }
+    
+        .Title h2 {
+            margin: 1rem 0;
+            font-size: 2rem;
+        }
+    
+        .Description {
+            max-width: 450px;
+            font-size: 14.5px;
+            color: var(#D5D5D5);
+            text-align: justify;
+            letter-spacing: 0.1rem;
+            padding: 0 1rem;
+    
+            @media screen and (max-width: 1080) {}
+        }
+    }
+    .Buttons {
+
+        margin: 1rem auto 0 auto;
+        display: flex;
+        max-width: 235px;
+        width: 100%;
+        justify-content: space-between;
+    
+        .BorderButton {
+            border: 2px solid var(--borderButton);
+            background-color: var(--buttonColorGray);
+            padding-top: 0.3rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            border-radius: 100px;
+            transition: border 0.3s;
+    
+            .Button {
+                background-color: inherit;
+            }
+    
+            &:hover {
+                border-color: var(--borderSelected);
+            }
+        }
+    }
+}

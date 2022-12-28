@@ -1,0 +1,15 @@
+.Container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 3rem;
+    background-color: var(--backgroundSectionTitle);
+    height: 150px;
+    line-height: 150px;
+    border-top: 2px solid var(--buttonColorGray);
+    border-bottom:2px solid var(--buttonColorGray);
+
+    h1{
+        font-size: 2.5rem;
+    }
+}

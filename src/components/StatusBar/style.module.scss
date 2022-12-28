@@ -1,0 +1,36 @@
+.Statusbar{
+    max-width: 676px;
+    width: 100%;
+    height: 0.876rem;
+    background-color: transparent;
+    border: 2px solid var(--borderaAvatar);
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 1px;
+    margin-top: 3rem;
+    position: relative;
+
+    span.Language{
+        font-weight: 700;
+        position: absolute;
+        top: -30px;
+        background-color: transparent;
+        left: 0;
+    }
+
+    span.ValuePercent{
+        position: absolute;
+        top: -25px;
+        background-color: transparent;
+        right: 0;
+    }
+
+    div{
+        font-size: large;
+        height: 0.438rem;
+        border-radius: 2rem;
+        background-color: var(--status-bar);
+    }
+}

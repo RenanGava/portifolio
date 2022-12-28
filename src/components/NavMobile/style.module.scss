@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+
+    .IconMenu{
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+    .navBar{
+        background: rgba($color: #444444, $alpha: 0.8);
+        height: 375px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transition: height 0.5s;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        div.div{
+            margin: 1rem 0;
+        }
+        
+        .link{
+            color: var(--textNotselected);
+            
+        }
+        
+        .selected{
+            font-weight: 700;
+        }
+    }
+
+    .showNavBar{
+        display: flex;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+
+@media (min-width:900px) {
+
+    .container{
+        display: none;
+    }
+}
