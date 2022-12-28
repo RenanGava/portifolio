@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { useState } from "react";
-import { IoMdMenu } from "react-icons/Io";
+// import { IoMdMenu } from "react-icons/Io";
+import MenuIcon from '../../../public/menuIcon.svg'
 import { ActiveLink } from "../ActiveLink";
 import style from './style.module.scss'
 
@@ -16,10 +18,12 @@ export function NavMobile() {
             <div
                 className={style.IconMenu}
             >
-                <IoMdMenu
-                    cursor="pointer"
+                <Image
+                    alt=""
+                    src={MenuIcon}
                     color="#007CED"
-                    size={40}
+                    width={40}
+                    height={40}
                     onClick={() =>{handleOpen()}}
                 />
             </div>
