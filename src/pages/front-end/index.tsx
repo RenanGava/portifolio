@@ -18,12 +18,8 @@ export default function FrontEnd() {
             >
                 <SectionTitle title='Front-end skills' />
 
-                <div
-                    className={style.ContentContainer}
-                >
-                    <div
-                        className={style.DescriptionContainer}
-                    >
+                <div className={style.ContentContainer}>
+                    <div className={style.DescriptionContainer}>
                         <h2>
                             Descriptions
                             <span className={style.span_extern}>
@@ -59,9 +55,7 @@ export default function FrontEnd() {
                         </div>
                         <div className={style.Description}>
 
-                            <div
-                                className={style.BoxIcon}
-                            >
+                            <div className={style.BoxIcon}>
                                 <Image
                                     className={style.Icon}
                                     src={desktop}
@@ -105,9 +99,7 @@ export default function FrontEnd() {
 
                         </div>
                     </div>
-                    <div
-                        className={style.StatsContainer}
-                    >
+                    <div className={style.StatsContainer}>
                         <h2>
                             Coding skills
                             <span className={style.span_extern}>

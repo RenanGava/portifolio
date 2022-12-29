@@ -51,7 +51,7 @@ export default function BackEnd() {
                                 </h4>
 
                                 <p>
-                                    Back en
+                                    
                                 </p>
                             </div>
 
