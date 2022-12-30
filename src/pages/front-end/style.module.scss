@@ -20,6 +20,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        padding: 1rem;
 
         div.DescriptionContainer{
             max-width: 920px;
@@ -39,7 +40,7 @@
                 max-width: 700px;
                 div.BoxIcon{
 
-                    margin-right: 2rem;
+                    margin-right: 1rem;
                     .Icon{
                         border-radius: 8px;
                         box-shadow: 0px 2px 5px black;  
@@ -113,3 +114,44 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    div.DescriptionContainer{
+        
+
+        h2{
+            text-align: center;
+        }
+
+
+        .Description{
+            display: flex;
+            margin-top: 2rem;
+            max-width: 700px;
+            div.BoxIcon{
+
+                margin-right: 0rem;
+                .Icon{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 8px;
+                    box-shadow: 0px 2px 5px black;  
+                }
+            }
+
+            .TitleAndDescription{
+                h4{
+                    font-size: 1.125rem;
+                    margin-bottom: 0.5rem;
+                    color: var(--white);
+                }
+
+                p{
+                    text-align: justify;
+                    font-size: 1rem;
+                    color: var(--textNotselected);
+                    padding-right: 3rem;
+                }
+            }
+        }
+    }
+}
