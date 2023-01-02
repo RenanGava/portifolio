@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Image from "next/image";
 import { useState } from "react";
 import MenuIcon from '../../../public/menuIcon.svg'
@@ -17,14 +19,21 @@ export function NavMobile() {
             <div
                 className={style.IconMenu}
             >
-                <Image
+                <FontAwesomeIcon 
+                    color="#007CED" 
+                    icon={faBars}
+                    size={"2xl"}
+                    cursor="pointer"
+                    onClick={() => { handleOpen() }}
+                />
+                {/* <Image
                     alt=""
                     src={MenuIcon}
                     color="#007CED"
                     width={40}
                     height={40}
-                    onClick={() => { handleOpen() }}
-                />
+                    
+                /> */}
             </div>
             <div className={open ? style.navBar : style.showNavBar}>
 
