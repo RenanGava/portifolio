@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useState } from "react";
-// import { IoMdMenu } from "react-icons/Io";
 import MenuIcon from '../../../public/menuIcon.svg'
 import { ActiveLink } from "../ActiveLink";
 import style from './style.module.scss'
@@ -9,7 +8,7 @@ export function NavMobile() {
 
     const [open, setOpen] = useState(false)
 
-    function handleOpen(){
+    function handleOpen() {
         setOpen(!open)
     }
 
@@ -24,54 +23,70 @@ export function NavMobile() {
                     color="#007CED"
                     width={40}
                     height={40}
-                    onClick={() =>{handleOpen()}}
+                    onClick={() => { handleOpen() }}
                 />
             </div>
-            <div className={ open? style.navBar : style.showNavBar}>
+            <div className={open ? style.navBar : style.showNavBar}>
 
                 <div className={style.Menu}>
-                    <ActiveLink
-                        href='/'
-                        activeClassname={style.selected}
-                        disableClassname={style.link}
-                        onClick={() =>{handleOpen()}}
-                    >
-                        <p>Home</p>
-                    </ActiveLink>
-                    <ActiveLink
-                        href='/front-end'
-                        activeClassname={style.selected}
-                        disableClassname={style.link}
-                        onClick={() =>{handleOpen()}}
-                    >
-                        <p>Front-End <br /> Skills</p>
-                    </ActiveLink>
-                    <ActiveLink
-                        href='/back-end'
-                        activeClassname={style.selected}
-                        disableClassname={style.link}
-                        onClick={() =>{handleOpen()}}
-                    >
-                        <p>Back-End Skills</p>
-                    </ActiveLink>
 
-                    <ActiveLink
-                        href='/portifolio'
-                        activeClassname={style.selected}
-                        disableClassname={style.link}
-                        onClick={() =>{handleOpen()}}
-                    >
-                        <p>Portifólio</p>
-                    </ActiveLink>
+                    <div className={style.DivMenu}>
+                        <ActiveLink
+                            href='/'
+                            activeClassname={style.selected}
+                            disableClassname={style.link}
+                            onClick={() => { handleOpen() }}
+                        >
+                            <p>Home</p>
+                        </ActiveLink>
+                    </div>
 
-                    <ActiveLink
-                        href='/contact'
-                        activeClassname={style.selected}
-                        disableClassname={style.link}
-                        onClick={() =>{handleOpen()}}
-                    >
-                        <p>Contato</p>
-                    </ActiveLink>
+                    <div className={style.DivMenu}>
+                        <ActiveLink
+                            href='/front-end'
+                            activeClassname={style.selected}
+                            disableClassname={style.link}
+                            onClick={() => { handleOpen() }}
+                        >
+                            <p>Front-End Skills</p>
+                        </ActiveLink>
+                    </div>
+
+                    <div className={style.DivMenu}>
+                        <ActiveLink
+                            href='/back-end'
+                            activeClassname={style.selected}
+                            disableClassname={style.link}
+                            onClick={() => { handleOpen() }}
+                        >
+                            <p>Back-End Skills</p>
+                        </ActiveLink>
+                    </div>
+
+                    <div className={style.DivMenu}>
+
+                        <ActiveLink
+                            href='/portifolio'
+                            activeClassname={style.selected}
+                            disableClassname={style.link}
+                            onClick={() => { handleOpen() }}
+                        >
+                            <p>Portifólio</p>
+                        </ActiveLink>
+                    </div>
+
+                    <div className={style.DivMenu}>
+                        <ActiveLink
+                            href='/contact'
+                            activeClassname={style.selected}
+                            disableClassname={style.link}
+                            onClick={() => { handleOpen() }}
+                        >
+                            <p>Contato</p>
+                        </ActiveLink>
+
+                    </div>
+
                 </div>
             </div>
         </div>
