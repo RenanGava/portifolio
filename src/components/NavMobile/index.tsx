@@ -26,14 +26,6 @@ export function NavMobile() {
                     cursor="pointer"
                     onClick={() => { handleOpen() }}
                 />
-                {/* <Image
-                    alt=""
-                    src={MenuIcon}
-                    color="#007CED"
-                    width={40}
-                    height={40}
-                    
-                /> */}
             </div>
             <div className={open ? style.navBar : style.showNavBar}>
 
