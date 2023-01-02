@@ -39,6 +39,7 @@
             width: 100%;
             height: 70px;
             line-height: 70px;
+            transition: background-color 0.2s;
 
             &:hover{
                 background-color: #444444;
