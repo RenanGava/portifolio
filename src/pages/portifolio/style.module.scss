@@ -58,6 +58,10 @@
                     @media screen and (max-width: 650px){
                         font-size: 16px;
                     }
+
+                    @media screen and (max-width: 400px){
+                        font-size: 13px;
+                    }
                     span{
                         margin-left: 0.5rem;
                         color: #007CED;
@@ -71,26 +75,4 @@
             }
         }
     }
-}
-
-
-@media screen and (max-width: 650px){
-    .Repos{
-        text-align: center;
-        height: 500px;
-        overflow-y: scroll;
-        
-
-        li{
-            a{
-                
-            }
-            
-            
-            &:hover{
-                background-color: #444444;
-            }
-        }
-    }
-    
 }
