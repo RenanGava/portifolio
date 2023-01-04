@@ -16,7 +16,7 @@ export function ListRepos({ style, repos }: IListProps) {
         return (
             <li key={index}>
                 <a href={repo?.html_url}>
-                    {index + 1}:<span>Projeto</span>-{repo?.full_name.split("RenanGava/")}
+                    <span>{index + 1}:</span>-{repo?.full_name.split("RenanGava/")}
                 </a>
             </li>
         )
