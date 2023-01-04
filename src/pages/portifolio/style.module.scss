@@ -1,0 +1,66 @@
+.Container{
+    width: 100%;
+
+    span.span_extern {
+        margin-left: 1rem;
+        width: 80px;
+        height: 3px;
+        display: flex;
+        background-color: var(--buttonColorGray);
+
+        span.span_intern {
+            width: 1.55rem;
+            height: 3px;
+            background-color: var(--status-bar);
+        }
+    }
+    
+    .Content{
+        h2{
+            max-width: 300px;
+            margin: 0 auto;
+            font-weight: bold;
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .Repos{
+            text-align: center;
+            height: 500px;
+            overflow-y: scroll;
+
+            li{
+                width: 100%;
+                margin: 0 auto;
+                list-style: none;
+                height: 45px;
+                line-height: 45px;
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-align: justify;
+                
+                a{
+                    max-width: 800px;
+                    margin: 0 auto;
+                    span{
+                        margin-left: 0.5rem;
+                        color: #007CED;
+                    }
+                }
+                
+                
+                &:hover{
+                    background-color: #444444;
+                }
+            }
+        }
+    }
+}
