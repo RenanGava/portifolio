@@ -17,10 +17,13 @@ export default function portifolio() {
         }
 
         getRepos()
+        
 
     }, [])
 
     console.log(repos);
+
+    
 
 
 

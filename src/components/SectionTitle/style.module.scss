@@ -8,7 +8,9 @@
     line-height: 150px;
     border-top: 2px solid var(--buttonColorGray);
     border-bottom:2px solid var(--buttonColorGray);
-
+    display: flex;
+    justify-content: space-between;
+    
     h1{
         font-size: 2.5rem;
     }
