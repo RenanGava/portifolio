@@ -3,24 +3,51 @@ import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-
 import { SectionTitle } from "../../components/SectionTitle";
 import style from "./style.module.scss"
 import { FormEvent, useRef, useState } from "react";
-import axios from "axios";
-
+import { toast } from "react-toastify";
+import emailjs from 'emailjs-com'
 
 export default function Contact() {
 
 
-    const name = useRef<HTMLInputElement>(null)
-    const email = useRef<HTMLInputElement>(null)
-    const message = useRef<HTMLTextAreaElement>(null)
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
 
 
     async function hanldeSubmit(e: FormEvent) {
         e.preventDefault()
 
-        await axios.post("http://localhost:3000/api/contact",
-            {ok: true}
-        )
+        if (name === '' || email === '' || message === '') {
+            toast.warn("Preencha os campos Corretamente")
+        }
+
+        console.log(e);
+
+
+        const data = {
+            name,
+            email,
+            message
+        }
+
+        const response = await emailjs.send(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            data,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+
+
+        console.log(response);
+
     }
+
+    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
+
 
     return (
         <>
@@ -75,17 +102,20 @@ export default function Contact() {
                         <input
                             type="text"
                             placeholder="Nome"
-                            ref={name}
+                            value={name}
+                            onChange={e => setName(e.target.value)}
                         />
                         <input
                             type="email"
                             placeholder="E-mail"
-                            ref={email}
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
                         />
                         <textarea
                             name=""
                             placeholder="Digite Sua Menssagem!"
-                            ref={message}
+                            value={message}
+                            onChange={e => setMessage(e.target.value)}
                         />
 
                         <button>Enviar</button>
