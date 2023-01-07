@@ -42,11 +42,12 @@ export default function Contact() {
             });
 
 
-        console.log(response);
+        setName('')
+        setEmail('')
+        setMessage('')
+        // console.log(response);
 
     }
-
-    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
 
 
     return (
