@@ -12,7 +12,7 @@ export default function BackEnd() {
     return (
         <>
             <head>
-                <title>Front-End Skills</title>
+                <title>Back-End Skills</title>
             </head>
             <div
                 className={style.Container}

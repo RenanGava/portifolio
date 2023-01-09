@@ -11,7 +11,7 @@ export default function FrontEnd() {
     return (
         <>
             <head>
-                <title>Back-End Skills</title>
+                <title>Front-End Skills</title>
             </head>
             <div
                 className={style.Container}
