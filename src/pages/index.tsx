@@ -45,7 +45,7 @@ export default function Home() {
 						<div className={style.Description}>
 							<p>
 								Olá, meu nome é Renan. Muito obrigado pela visita!
-								Minha carreira como desenvolvedor se iniciou em 2019, onde cursei juntamente com o ensino médio, o curso "Técnico em Informática" no Instituto Federal do Espírito Santo, onde me formei em 2022. Durante a minha trajetória, não foquei apenas no Curso Técnico, me especializei e fiz vários cursos relacionados. Atualmente, estou em minha segunda graduação, Análise e Desenvolvimento de Sistemas.
+								Minha carreira como desenvolvedor se iniciou em 2019, onde cursei juntamente com o ensino médio, o curso "Técnico em Informática" no Instituto Federal do Espírito Santo, onde me formei em 2021. Durante a minha trajetória, não foquei apenas no Curso Técnico, me especializei e fiz vários cursos relacionados. Atualmente, estou em minha segunda graduação, Análise e Desenvolvimento de Sistemas.
 								Busco sempre me aprimorar e atualizar meus conhecimentos, principalmente com novas linguagens e diferentes bibliotecas.
 							</p>
 						</div>
