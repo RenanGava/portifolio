@@ -8,7 +8,7 @@ import home from "../../../public/home.svg"
 
 export default function BackEnd() {
 
-    
+
     return (
         <>
             <head>
@@ -51,7 +51,8 @@ export default function BackEnd() {
                                 </h4>
 
                                 <p>
-                                    
+                                    Todas as tecnologias listadas fazem parte da minha stack de desenvolvimento back-end, das quais
+                                    desenvolvo e aprimoro minhas API's.
                                 </p>
                             </div>
 
@@ -69,12 +70,14 @@ export default function BackEnd() {
                             </div>
                             <div className={style.TitleAndDescription}>
                                 <h4>
-                                    Sass, Styled-Components, Chakra-UI
+                                    Express, Prisma, SQL
                                 </h4>
 
                                 <p>
-                                    Essas tecnologias para contrução de interfaces são as que eu utilizo para
-                                    criar meus Apps Front-End sendo a principal delas o Styled-Components o meu preferido
+                                    Na minha stack de desenvolvimento essas tecnologias se destacam por
+                                    sempre estarem presentes em minhas a API's. O Express é utilizado para receber, interpretar e manipular as chamdas HTTP. Já o Prisma
+                                    é um ORM utilizado para integração do banco de dados. O SQL é utilizado para criar Banco de dados
+                                    estruturados e robustos junto com Postgress.
                                 </p>
                             </div>
 
@@ -92,13 +95,14 @@ export default function BackEnd() {
                             </div>
                             <div className={style.TitleAndDescription}>
                                 <h4>
-                                    Reactjs, Nextjs, React-Native
+                                    Jsonwebtoken, Cloudnary-Provider, NoSQL
                                 </h4>
 
                                 <p>
-                                    Bom Estes Frameworks como Nextjs e React-Native dispensam apresentações,
-                                    esses são os frameworks utilizados nos meus proejtos, tendo preferencia
-                                    por aplicações web ou Web Apps sendo SPA ou SSR.
+                                    Em toda API se faz necessário a autenticação sendo eestabelcidadas, por sua praticidade a lib jsonwebtoken para este serviço.
+                                    Para salvar e acondicionar as  imagens das aplicações, é utilizado a Cloudnary para hospedar as imagens destimadas as API's, e
+                                    para aplicações mais simples que não vão utilizar dados complexos são utilizados NoSQL juntamente com  MongoDB e FaunaDB, pois são
+                                    dois exímios bancos de dados.
                                 </p>
                             </div>
 
@@ -117,12 +121,12 @@ export default function BackEnd() {
                         </h2>
 
                         <div className={style.status}>
-                        <StatusBar language='Nodejs' percentCurrent='60' />
+                            <StatusBar language='Nodejs' percentCurrent='60' />
                             <StatusBar language='Express' percentCurrent='50' />
                             <StatusBar language='prisma' percentCurrent='60' />
-                            <StatusBar language='jsonwebtoke' percentCurrent='40' />
+                            <StatusBar language='jsonwebtoken' percentCurrent='40' />
                             <StatusBar language='Cloudnary-Provider' percentCurrent='30' />
-                            <StatusBar language='Postgress' percentCurrent='30' />
+                            <StatusBar language='PostgresSQL' percentCurrent='30' />
                             <StatusBar language='MySQL' percentCurrent='30' />
                             <StatusBar language='FaunaDB' percentCurrent='30' />
                             <StatusBar language='MongoDB' percentCurrent='30' />

@@ -46,9 +46,10 @@ export default function FrontEnd() {
                                 </h4>
 
                                 <p>
-                                    Todos os frameworks ou Bibliotecas listadas ao lado já foram utilizadas por mim para desenvolver
-                                    algum tipo de aplicação front-end, como exemplo este meu App portifólio que foi
-                                    desenvolvido com NextJs Typescript e Sass e axios para as requisições a API do GitHub.
+                                    Os Frameworks e Bibliotecas que foram pautados ao lado,
+                                    foram utilizados para desenvolver e executar aplicações Front-end.
+                                    Como exemplar para essas aplicações, é possível expor esse próprio APP de Portifólio,
+                                    que foi desenvolvido com NextJs, Typescript, Sass e Axios para as requisições a API do GitHub.
                                 </p>
                             </div>
 
@@ -68,17 +69,16 @@ export default function FrontEnd() {
                                 </h4>
 
                                 <p>
-                                    Essas tecnologias para contrução de interfaces são as que eu utilizo para
-                                    criar meus Apps Front-End sendo a principal delas o Styled-Components o meu preferido
+                                    São utilizadas três tecnologias pautadas para a construção de interfaces para
+                                    produção de Apps Front-end sendo elas,
+                                    Sass, Chakra-UI e a principal delas, Styled-Components.
                                 </p>
                             </div>
 
                         </div>
                         <div className={style.Description}>
 
-                            <div
-                                className={style.BoxIcon}
-                            >
+                            <div className={style.BoxIcon}>
                                 <Image
                                     className={style.Icon}
                                     src={home}
@@ -91,9 +91,9 @@ export default function FrontEnd() {
                                 </h4>
 
                                 <p>
-                                    Bom Estes Frameworks como Nextjs e React-Native dispensam apresentações,
-                                    esses são os frameworks utilizados nos meus proejtos, tendo preferencia
-                                    por aplicações web ou Web Apps sendo SPA ou SSR.
+                                    Os Frameworks aderidos aos projetos dispensam apresentações. ReactJs, NextJs,
+                                    React-Native, fazem parte da gama de particularidades das linguagens manuseadas.
+                                    A ênfase de predileção se apresenta por aplicações Web Apps, sendo SPA ou SSR
                                 </p>
                             </div>
 
