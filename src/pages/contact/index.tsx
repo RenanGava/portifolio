@@ -56,7 +56,7 @@ export default function Contact() {
                 <title>Formulário - Contato</title>
             </head>
 
-            <div>
+            <div className={style.Container}>
                 <SectionTitle
                     title="Contato"
                     styleComponent={style}

@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import '../styles/globals.scss'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import 'react-toastify/dist/ReactToastify.css';
+import { Footer } from '../components/Footer';
 
 
 config.autoAddCss = false
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<Header />
 				<Component {...pageProps} />
 				<ToastContainer/>
+				<Footer/>
 			</>
 		)
 	}

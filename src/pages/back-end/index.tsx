@@ -77,7 +77,7 @@ export default function BackEnd() {
                                     Na minha stack de desenvolvimento essas tecnologias se destacam por
                                     sempre estarem presentes em minhas a API's. O Express é utilizado para receber, interpretar e manipular as chamdas HTTP. Já o Prisma
                                     é um ORM utilizado para integração do banco de dados. O SQL é utilizado para criar Banco de dados
-                                    estruturados e robustos junto com Postgress.
+                                    estruturados e robustos para isto utilizo o Postgress.
                                 </p>
                             </div>
 
@@ -126,7 +126,7 @@ export default function BackEnd() {
                             <StatusBar language='prisma' percentCurrent='60' />
                             <StatusBar language='jsonwebtoken' percentCurrent='40' />
                             <StatusBar language='Cloudnary-Provider' percentCurrent='30' />
-                            <StatusBar language='PostgresSQL' percentCurrent='30' />
+                            <StatusBar language='PostgresSQL' percentCurrent='40' />
                             <StatusBar language='MySQL' percentCurrent='30' />
                             <StatusBar language='FaunaDB' percentCurrent='30' />
                             <StatusBar language='MongoDB' percentCurrent='30' />
