@@ -1,7 +1,6 @@
 .HomeContainer {
     margin: 0 auto;
     display: flex;
-    height: calc(100vh - 8rem);
     padding-top: 8rem;
     justify-content: center;
 }
@@ -89,10 +88,11 @@
 
 @media (max-width: 980px) {
     .HomeContainer {
-        padding-top: 0;
+        padding-top: 0rem;
     }
 
     .HomeContent {
+        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         max-width: 1280px;
