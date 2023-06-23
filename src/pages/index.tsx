@@ -22,8 +22,6 @@ export default function Home() {
 		)
 	}, [])
 
-	console.log(user);
-
 	return (
 		<>
 			<head>
@@ -31,9 +29,7 @@ export default function Home() {
 			</head>
 			<div className={style.HomeContainer}>
 				<div className={style.HomeContent}>
-					<div className={style.Avatar}>
-						<img className={style.image} src={user?.avatar_url} alt='Logo' />
-					</div>
+				<img className={style.image} src={user?.avatar_url} alt='Logo' />
 
 					<div className={style.UserContent}>
 						<div className={style.Title}>

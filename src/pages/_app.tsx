@@ -24,12 +24,12 @@ export default function App({ Component, pageProps }: AppProps) {
 		return null
 	} else {
 		return (
-			<>
+			<div className='_app'>
 				<Header />
 				<Component {...pageProps} />
 				<ToastContainer/>
 				<Footer/>
-			</>
+			</div>
 		)
 	}
 }

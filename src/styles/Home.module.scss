@@ -1,8 +1,10 @@
 .HomeContainer {
     margin: 0 auto;
     display: flex;
-    padding-top: 8rem;
+    padding-top: 1rem;
+    height: calc(100vh - 5vh - 5vh);
     justify-content: center;
+    margin-bottom: auto;
 }
 
 .HomeContent {
@@ -12,20 +14,11 @@
     width: 100%;
     justify-content: space-around;
 
-    div.Avatar {
+    .image{
         width: 22rem;
         height: 22rem;
-        border-radius: 22rem;
-        background-color: var(--borderaAvatar);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .image {
-            width: 20rem;
-            height: 20rem;
-            border-radius: 20rem;
-        }
+        border: 0.5rem solid gray;
+        border-radius: 15rem;
     }
 
 
@@ -99,27 +92,20 @@
         width: 100%;
         align-items: center;
 
-        div.Avatar {
-            width: 18rem;
-            height: 18rem;
-            border-radius: 22rem;
-            background-color: var(--borderaAvatar);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            .image {
-                width: 16rem;
-                height: 16rem;
-                border-radius: 20rem;
-            }
+        .image{
+            width: 16rem;
+            height: 16rem;
+            border: 0.5rem solid gray;
+            border-radius: 15rem;
         }
+        
     }
 
     .UserContent {
         max-width: 900px;
         text-align: center;
         margin-bottom: 100px;
+        margin-bottom: 2rem;
         .Title span {
             font-size: 1.2rem;
             color: var(--textNotselected);
